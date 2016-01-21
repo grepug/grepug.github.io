@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Hexo]]></title>
+  <title><![CDATA[Project Birdie]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2016-01-21T03:28:57.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://grepug.github.io/"/>
+  <updated>2016-01-21T05:24:38.000Z</updated>
+  <id>http://grepug.github.io/</id>
   
   <author>
-    <name><![CDATA[John Doe]]></name>
+    <name><![CDATA[GrePuG]]></name>
     
   </author>
   
@@ -16,23 +16,44 @@
   
   <entry>
     <title><![CDATA[Birdie 内测 0.0.1 版本发布公告]]></title>
-    <link href="http://yoursite.com/2016/01/21/Birdie-%E5%86%85%E6%B5%8B-0-0-1%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%85%AC%E5%91%8A/"/>
-    <id>http://yoursite.com/2016/01/21/Birdie-内测-0-0-1版本发布公告/</id>
+    <link href="http://grepug.github.io/2016/01/21/Birdie-%E5%86%85%E6%B5%8B-0-0-1%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%85%AC%E5%91%8A/"/>
+    <id>http://grepug.github.io/2016/01/21/Birdie-内测-0-0-1版本发布公告/</id>
     <published>2016-01-21T03:28:38.000Z</published>
-    <updated>2016-01-21T03:28:57.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-01-21T05:24:38.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="u5DF2_u5B8C_u6210_u529F_u80FD"><a href="#u5DF2_u5B8C_u6210_u529F_u80FD" class="headerlink" title="已完成功能"></a>已完成功能</h2><ul>
+<li>好友<ul>
+<li>可以关注好友</li>
+<li>可以与好友单聊</li>
+</ul>
+</li>
+<li>比赛<ul>
+<li>可以发起比赛</li>
+<li>由房主邀请参与者</li>
+<li>由房主调整对阵双方</li>
+<li>系统自动判断比赛类型</li>
+<li>房主可以选择得分制、局数</li>
+<li>比赛开始后由裁判端操作计分面板</li>
+<li>比赛结束后裁判端自动上传比赛数据，选手端接收比赛结果推送</li>
+<li>可以查看比赛历史</li>
+</ul>
+</li>
+</ul>
+<h2 id="APP_u622A_u56FE"><a href="#APP_u622A_u56FE" class="headerlink" title="APP截图"></a>APP截图</h2><p>稍后上传</p>
+<h2 id="u9884_u8BA1_u53D1_u5E03_u65F6_u95F4"><a href="#u9884_u8BA1_u53D1_u5E03_u65F6_u95F4" class="headerlink" title="预计发布时间"></a>预计发布时间</h2><p>2016年1月28日</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<h2 id="u5DF2_u5B8C_u6210_u529F_u80FD"><a href="#u5DF2_u5B8C_u6210_u529F_u80FD" class="headerlink" title="已完成功能"></a>已完成功能</h2><ul>
+<li>好友<u]]>
     </summary>
     
   </entry>
   
   <entry>
     <title><![CDATA[Birdie项目介绍]]></title>
-    <link href="http://yoursite.com/2016/01/21/Birdie%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://yoursite.com/2016/01/21/Birdie项目介绍/</id>
+    <link href="http://grepug.github.io/2016/01/21/Birdie%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://grepug.github.io/2016/01/21/Birdie项目介绍/</id>
     <published>2016-01-21T02:35:38.000Z</published>
-    <updated>2016-01-21T04:48:03.000Z</updated>
+    <updated>2016-01-21T05:09:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="u80CC_u666F_u4ECB_u7ECD"><a href="#u80CC_u666F_u4ECB_u7ECD" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>该项目起源于我对移动支付的痴迷，加上我又非常疯狂于打羽毛球，于是在去年9月我打算给我经常去的球馆开发一个手机支付的系统：手机刷二维码支付入场门票，买水等等。刚开始我介绍给老板，他表示很感兴趣，但当我开发快要完成，准备拿出来测试的时候，他却告诉我球馆的人太少，用这样一个系统并没有多大意义。我开始有点气馁，迷迷糊糊地过了几个月。我想过虽然球馆人少，但可以给周边的商铺也搭上这样的支付系统，搞商圈什么的。但随着“美团”、“大众点评”、“百度糯米”，再加上支付宝、微信支付自家的移动支付逐渐加入到我们这个小城市，我这个想法完全被我抛弃了。</p>
 <p>为何不搞个专注于羽毛球的手机应用？我是这么的热爱羽毛球，一周不打上六次都浑身不舒服的那种。于是，我首先看了下市面上的几个关于羽毛球的APP，大多以<code>自由社区</code>、<code>羽球新闻（八卦）</code>、<code>比赛及教学视频</code>、<code>装备商城</code>的形式存在。以百度羽毛球吧为首的“装备讨论区”，楚天等的商城，爱羽客的视频最为丰富，以及稍微侧重于技术方面的中羽论坛基本上组成了当下国内羽毛球互联网平台。虽然也出现了利用“高科技”来记录羽毛球技术的数据，但羽毛球运动的复杂性是远远不可能由简单的传感器采集数据的，所以这种“高科技”现在来说只是一种噱头罢了。</p>
 <p>我发现在这么多羽毛球平台中，除了商城，都能归为“资讯”类，对我来说，用这些APP就像刷微博一样，看看新闻评测。但是对于一项竞技性非常高的球类运动来说，它带来的乐趣完全不限于这些，我认为正是竞技才是羽毛球的精华所在。而<code>社交</code>功能是移动APP灵魂所在，于是，围绕着<code>竞技</code>与<code>社交</code>，我想要做出与众不同的APP。</p>
@@ -47,6 +68,7 @@
 <h2 id="u76EE_u7684"><a href="#u76EE_u7684" class="headerlink" title="目的"></a>目的</h2><p>作为羽毛球狂热爱好者，主要目的不言而喻，就是想为羽毛球的推广与发展出小小的一份力。</p>
 <p>作为亲身体验，通过羽毛球遇到了不少对自己有帮助的人，我相信以后会更多。我希望越来越多的青少年参与到这项运动中来。对于我自己来说，是羽毛球把我从一个初中只会在放假玩电脑游戏的年轻人，变成一个更加关注运动与的羽毛球狂热者，让我有更多更强的身体资本消耗在写代码的时间里。</p>
 <h2 id="u76EE_u6807"><a href="#u76EE_u6807" class="headerlink" title="目标"></a>目标</h2><p>羽毛球在国内普及得还算不错，大小城市基本上都有羽毛球球馆（俱乐部），参与者数量庞大，业余比赛也争相斗艳。我想让该APP在未来成为每一个羽毛球爱好者的必装APP，大小比赛普遍采用该APP来记录数据，打造全国业余选手积分榜、省、市、俱乐部、战队积分榜。帮助爱好者入门，入门者提高。</p>
+<h2 id="u6700_u540E"><a href="#u6700_u540E" class="headerlink" title="最后"></a>最后</h2><p>请关注我的第一个内测版本，预计于1月28日在本站发布。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="u80CC_u666F_u4ECB_u7ECD"><a href="#u80CC_u666F_u4ECB_u7ECD" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>该项目起源于我对移动支付的痴迷，加上我又非常疯狂]]>
@@ -56,8 +78,8 @@
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/21/hello-world/"/>
-    <id>http://yoursite.com/2016/01/21/hello-world/</id>
+    <link href="http://grepug.github.io/2016/01/21/hello-world/"/>
+    <id>http://grepug.github.io/2016/01/21/hello-world/</id>
     <published>2016-01-21T01:34:02.000Z</published>
     <updated>2016-01-21T01:34:02.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
