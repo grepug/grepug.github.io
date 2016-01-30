@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Birdie 日志001 · Project Birdie</title><meta name="description" content="Birdie日志从这里开始连载，主要介绍我们开发的动态：我们新的对设计这款APP的想法，以及我们接下来要实现的功能。
+今天上午进行了Birdie项目的首次头脑风暴（如果两人以上的讨论才算的话），主要讨论了Birdie项目中比赛的一些想法。我们将要实现的一个功能，给它起个名字叫赛制库。
+为什么要设计赛制库羽毛球的参与人群非常广泛，这是我在之前的文章中谈到过的。如果要举办一次比赛的话，却需要考虑到具体的参赛群体，并不是所有人群都喜欢我们常见的单败淘汰制（赛前报名，排好对阵表），男单、女单、男双、女双、混双这样安排。
+在具体的业余比赛中，我们可能会分：
+
+参赛群体为年轻人，如中学、高校学生
+
+参赛群体多为35岁以上的中年人
+
+
+对于年轻人，他们的特点是："><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="http://weibo.com/grepug" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><a href="https://github.com/grepug" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Birdie 日志001</h1><div class="post-meta"><div class="post-time">Jan 30, 2016</div></div><div class="post-content"><p>Birdie日志从这里开始连载，主要介绍我们开发的动态：我们新的对设计这款APP的想法，以及我们接下来要实现的功能。</p>
+<p>今天上午进行了Birdie项目的首次头脑风暴（如果两人以上的讨论才算的话），主要讨论了Birdie项目中<code>比赛</code>的一些想法。我们将要实现的一个功能，给它起个名字叫<code>赛制库</code>。</p>
+<h2 id="u4E3A_u4EC0_u4E48_u8981_u8BBE_u8BA1_u8D5B_u5236_u5E93"><a href="#u4E3A_u4EC0_u4E48_u8981_u8BBE_u8BA1_u8D5B_u5236_u5E93" class="headerlink" title="为什么要设计赛制库"></a>为什么要设计赛制库</h2><p>羽毛球的参与人群非常广泛，这是我在之前的文章中谈到过的。如果要举办一次比赛的话，却需要考虑到具体的参赛群体，并不是所有人群都喜欢我们常见的单败淘汰制（赛前报名，排好对阵表），男单、女单、男双、女双、混双这样安排。</p>
+<p>在具体的业余比赛中，我们可能会分：</p>
+<ol>
+<li><p>参赛群体为年轻人，如中学、高校学生</p>
+</li>
+<li><p>参赛群体多为35岁以上的中年人</p>
+</li>
+</ol>
+<p>对于年轻人，他们的特点是：</p>
+<ul>
+<li>体力充沛，能进行高强度对抗</li>
+<li>更渴望争夺名次</li>
+<li>时间更灵活，能按时签到</li>
+</ul>
+<p>所以，我们认为这样的群体更适用于相对于严格的比赛制度，如常见的单败淘汰，小组循环后再单淘。</p>
+<p>而对于35岁以上的中年人，他们的特点是：</p>
+<ul>
+<li>男性选手多于女性选手</li>
+<li>对争夺名次的态度不同</li>
+<li>参赛选手水平层次不等（包括硬实力和体力）</li>
+<li>赛事时间需要灵活，并不是所有人都能按时签到</li>
+</ul>
+<p>这样的群体，很可能是国内羽毛球参与者中最多的一种，他们只是将羽毛球用来休闲、健身、交友，不像年轻人一样进行高强度对抗，他们不再适合使用以上提到的赛制。</p>
+<p>实际上我是受到了符合该人群的当地一个羽毛球俱乐部内部活动的比赛规则的启发。这个比赛规则具有<code>灵活</code>、<code>娱乐性高</code>、<code>对抗强度可高可低</code>、<code>不冷落女选手</code>的特点</p>
+<h2 id="u4ECB_u7ECD_u4E00_u4E0B_u8FD9_u4E2A_u8D5B_u5236"><a href="#u4ECB_u7ECD_u4E00_u4E0B_u8FD9_u4E2A_u8D5B_u5236" class="headerlink" title="介绍一下这个赛制"></a>介绍一下这个赛制</h2><ul>
+<li><p>灵活的报名与签到，不排阵，积分制</p>
+<p>这个赛制不需要提前报名，而是现场报名与签到。报名完成后你将可以选择<code>就绪</code>，系统就会自动为你安排双打搭档和对手，因此不用像常见的比赛一样排阵并一轮一轮地打下去，而是每打完一场系统自动为你配对下一场。采用积分制，打得越多并胜得越多你的积分就越高。最后以积分排出前N名，并给予奖励。这里就体现了参与人群的特点：并不是每个人都想要或有能力拿名次，更多人是抱着重在参与的态度。</p>
+</li>
+<li><p>不分男女</p>
+<p>男选手多于女选手在业余比赛中是非常普遍的，但将男女分开又使得比赛的趣味大减，于是这个赛制很聪明地规定不分男女，但给女选手的参与额外的奖励：如果你跟一个女选手搭档，将获得额外积分。</p>
+</li>
+<li><p>双打没有固定搭档，比赛实际上是个人赛</p>
+<p>每打完一场，下一场你的搭档和对手都可能变，这里也增加了趣味性，避免了高手强强联手的情况。</p>
+</li>
+</ul>
+<h2 id="u5EFA_u7ACB_u6211_u4EEC_u7684_u8D5B_u5236_u5E93"><a href="#u5EFA_u7ACB_u6211_u4EEC_u7684_u8D5B_u5236_u5E93" class="headerlink" title="建立我们的赛制库"></a>建立我们的赛制库</h2><p>分析完这个比赛规则，我感觉到这只是全国千千万万个俱乐部千奇百怪的比赛规则中的一种。这样的赛制非常适合参赛人群的特点，体现了制定者的智慧。这也是羽毛球这项运动的魅力。</p>
+<p>于是，我认为在我们的APP中，可以加入来自全国不同俱乐部中有特点的羽毛球比赛规则，将它们程序化，建立一个<code>赛制库</code>。让全国各地羽毛球爱好者举办比赛有更多的规则上的选择，加上APP的辅助，一定能让比赛更加有趣。</p>
+</div></article></div></section><footer><div class="paginator"><a class="prev"> </a><a href="/2016/01/21/Birdie-内测-0-0-1版本发布公告/" class="next">下一篇</a></div><div data-thread-key="2016/01/30/Birdie-日志001/" data-title="Birdie 日志001" data-url="http://grepug.github.io/2016/01/30/Birdie-日志001/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"birdie"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script></footer><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?a36e15d9e2adec9a21fcdd9f686b1ed2";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
