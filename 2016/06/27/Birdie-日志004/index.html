@@ -1,4 +1,31 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Birdie-日志004 · Project Birdie</title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="http://weibo.com/grepug" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><a href="https://github.com/grepug" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Birdie-日志004</h1><div class="post-meta"><div class="post-time">Jun 27, 2016</div></div><div class="post-content"></div></article></div></section><footer><div class="paginator"><a class="prev"> </a><a href="/2016/03/12/Birdie-日志003/" class="next">下一篇</a></div><div data-thread-key="2016/06/27/Birdie-日志004/" data-title="Birdie-日志004" data-url="http://grepug.github.io/2016/06/27/Birdie-日志004/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"birdie"};
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Birdie-日志004 · Project Birdie</title><meta name="description" content="时隔三个多月，我又重新开始写我的Birdie项目。然而我将它打翻重写，并“升级到”Birdie2，用新的前端框架技术。这里不得不顺便吐槽几句前端真是日新月异啊，哈哈。好在现在用的Vue也是非常流行，也非常成熟的框架了（很难想象它是一个个人项目）
+简单介绍两句Birdie2吧
+
+一个纯WEB APP，不再用APICloud打包了（在上一家公司已经受够了APICloud）
+运行在微信内置浏览器，也就是说它是一个微信服务号
+同样使用Leancloud作为后端数据库，实际上我也是写了好几行NodeJS代码的
+用了野狗作为实时通信框架
+基于Vue全家桶, 包括vue, &lt;a href=&quot;https://github."><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="http://weibo.com/grepug" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><a href="https://github.com/grepug" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Birdie-日志004</h1><div class="post-meta"><div class="post-time">Jun 27, 2016</div></div><div class="post-content"><p>时隔三个多月，我又重新开始写我的Birdie项目。然而我将它打翻重写，并“升级到”<code>Birdie2</code>，用新的前端框架技术。这里不得不顺便吐槽几句前端真是日新月异啊，哈哈。好在现在用的Vue也是非常流行，也非常成熟的框架了（很难想象它是一个个人项目）</p>
+<p>简单介绍两句<code>Birdie2</code>吧</p>
+<ul>
+<li>一个纯WEB APP，不再用APICloud打包了（在上一家公司已经受够了APICloud）</li>
+<li>运行在微信内置浏览器，也就是说它是一个微信服务号</li>
+<li>同样使用Leancloud作为后端数据库，实际上我也是写了好几行NodeJS代码的</li>
+<li>用了<a href="https://wilddog.com" target="_blank" rel="external">野狗</a>作为实时通信框架</li>
+<li>基于<a href="https://github.com/vuejs" target="_blank" rel="external">Vue</a>全家桶, 包括<a href="https://github.com/vuejs/vue" target="_blank" rel="external">vue</a>, <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="external">vue-cli</a>,  <a href="https://github.com/vuejs/vue-router" target="_blank" rel="external">vue-router</a>, <a href="https://github.com/vuejs/vuex" target="_blank" rel="external">vuex</a> 等等；我就是喜欢这样的全家桶，工具就是这样傻瓜式的，开箱即用</li>
+</ul>
+<h2 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h2><p>这个项目我也是拖了很久了，本来就有很多想法，却迟迟写不好，写不完，没有静下心来去写。甚至有朋友说有人想要投资我的项目的时候我才发现，我却什么都拿不出手。</p>
+<p>再加上我找工作很烦，由于我学历，经验都有限，过去应聘都**的是培训机构，一看培训内容，都是一大堆落后的前端技术，我一点兴趣都没有了。</p>
+<p>索性就“闭门造车”吧，我重新审视我的Birdie2，把自己关在屋子里，写不好就不出门，哼，总是需要下个大的决心才能干好一件事。</p>
+<h2 id="吐槽完毕"><a href="#吐槽完毕" class="headerlink" title="吐槽完毕"></a>吐槽完毕</h2><p>目前就想让自己的想法更简单一点，什么职场什么的都不重要，我就是要做出我喜欢的东西。</p>
+<h2 id="新计划"><a href="#新计划" class="headerlink" title="新计划"></a>新计划</h2><h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>我喜欢羽毛球，却奈何四月份打球前没热身，一下子把右手肱二头肌拉伤了，当时以为没事，还连续地打球，于是越来越严重，所以现在我只能休息了（估计下个月能好吧！！）</p>
+<p>年前认识了几个很喜欢羽毛球的高中生，水平说实在的比我当年好到哪里去，我和他们经常在羽毛球上的交流也使得他们的球技越来越好。因此我觉得这些真正喜欢羽毛球的年轻人需要比赛去历练一下（虽然是业余的，但竞技体育真的很提高个人的魅力），于是我想借我的即将诞生的Birdie2在我的家乡组织一次比赛吧，想想还是挺激动的。</p>
+<h4 id="简单想法-amp-计划"><a href="#简单想法-amp-计划" class="headerlink" title="简单想法 &amp; 计划"></a>简单想法 &amp; 计划</h4><p>我想参与对象就是30岁以下的男选手吧，因为几乎的男的，而我们更喜欢单打。年轻人喜欢单打是对的，首先单打肯定是羽毛球的基础，单打都打不好怎么跟人配合呢？再加上单挑嘛，更能展现个人魅力。体力旺盛也是我们年轻人更喜欢单打的主要原因。当然羽球巨星林丹、李宗伟不都是单打选手吗？大多数羽毛球爱好者都在粉这两位巨星。</p>
+<p>具体打单败淘汰赛，还是先小组循环后淘汰，这个估计要看报名人数了。</p>
+<p>我希望安排在暑假的某一个周末，两天比较合适</p>
+<p>拉赞助商，这个就要看我的本事了。从来没有做过，主要还是依靠我的APP吧，然后参加的人数。赞助商一定是这次比赛举办成功与否的关键（涉及到奖品和资金以及后续的比赛）</p>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>我会在近期写出一个这次比赛的详细计划，并发表在这个网站上，请大家留意</p>
+</div></article></div></section><footer><div class="paginator"><a class="prev"> </a><a href="/2016/03/12/Birdie-日志003/" class="next">下一篇</a></div><div data-thread-key="2016/06/27/Birdie-日志004/" data-title="Birdie-日志004" data-url="http://grepug.github.io/2016/06/27/Birdie-日志004/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"birdie"};
 (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
