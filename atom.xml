@@ -1,210 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Project Birdie]]></title>
+  <title>Project Birdie</title>
   
   <link href="/atom.xml" rel="self"/>
+  
   <link href="http://grepug.github.io/"/>
-  <updated>2016-02-15T02:56:00.000Z</updated>
+  <updated>2016-06-27T05:40:07.000Z</updated>
   <id>http://grepug.github.io/</id>
   
   <author>
-    <name><![CDATA[GrePuG]]></name>
+    <name>GrePuG</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Birdie 项目计划书（草稿）]]></title>
-    <link href="http://grepug.github.io/2016/02/15/Birdie-%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92%E4%B9%A6/"/>
-    <id>http://grepug.github.io/2016/02/15/Birdie-项目计划书/</id>
-    <published>2016-02-15T01:12:57.000Z</published>
-    <updated>2016-02-15T02:56:00.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="u9879_u76EE_u6982_u8FF0"><a href="#u9879_u76EE_u6982_u8FF0" class="headerlink" title="项目概述"></a>项目概述</h1><p>随着“互联网+”概念的提出和大力发展，各行各业都开始引入互联网的元素。而在体育健康方面，苹果公司率先在其公司研发的移动操作系统iOS8中发布了“健康”应用，依靠iPhone的新“协处理器”对用户的健康数据进行跟踪记录，<code>计步</code>功能在业界就这样火了起来。大小互联网公司争先开发了自己的计步应用，打着健康的旗号，融入自己的社交平台。用户不知不觉就喜欢上了每天晚上和社交圈里的好友比对自己一天走了多少步，乐此不彼。</p>
-<p>在这样一个DT（马云提出的Data Technology）时代，一个小小的计步数据却被互联网厂家开发出来并成为一个被用户喜爱的产品。除此之外，在健康方面的“睡眠时间”，“体重”都可以通过手机应用测量并记录，为用户带来了更好的体验。可见<code>数据</code>在这个时代的重要性。</p>
-<p>目前，如果羽毛球爱好者想要记录平时和球友的比赛数据，是非常困难的；或者他们根本没有想到，或觉得没有必要把每场比赛的分数记录下来。就如上面<code>计步</code>的例子，在带有计步功能的手机应用面世之前，也一定没有人想要把每天走的步数记录下来。</p>
-<p>因此，羽毛球爱好者需要这样一个<code>工具</code>。</p>
-<p>Birdie项目就是要开发带有这个工具的APP（以下称为APP），用来记录羽毛球爱好者平时对抗、参加业余赛事等的比赛数据。它可以在任何时候任何地方很方便地发起一场简单的比赛，房主可以邀请双方选手及<code>裁判</code>。比赛开始后，裁判会掌控比赛的<code>计分器</code>，就像专业的羽毛球比赛的裁判使用的触屏计分器一样，我们将它缩小到手机上，让业余爱好者也能享受到到实时计分体验。</p>
-<p>计分器上显示比赛双方的名称及头像，裁判可以在某方得分后为其加1分，当进行到中场间歇分时（如21分制的11分），计分器自动提醒“间歇”并做出1分钟倒计时。计分器同时会显示比赛时长，比赛的项目等等。在比赛结束后，比赛数据，包括双方得分，胜方，每球得分情况等数据上传至数据库，供用户随时调用进行对比。</p>
-<h2 id="u8D5B_u4E8B"><a href="#u8D5B_u4E8B" class="headerlink" title="赛事"></a>赛事</h2><p>有了计分器，不仅可以随时进行一场简单的比赛，更重要的是，让组织一次羽毛球赛事更加便捷。</p>
-<p>在APP发布之前，如果在一次赛事中由裁判记录双方得分，都是用纸和笔完成的，这就造成了后续的分数统计都非常麻烦。如果引入我们的计分器，将大大减轻得分统计的工作量。</p>
-<p>除了计分器，我们将用APP重新定义“组织一次羽毛球赛事”。赛事的发起、报名（包括交报名费）、订场地、出签位表、比赛日选手签到、主裁判叫号（通过APP信息推送）、选手弃权轮空、裁判计分、赛后统计、颁发奖励等等流程全部在APP中完成。相比于目前的由组织者编写赛事公告的word文档、组织者手工编排签位表并张贴到墙上、用纸笔来签到、纸笔计分、纸笔统计，大大地减轻了组织者的负担，让每一个参赛者都把精力放到比赛中。</p>
-<p>除此之外，一次赛事后的结果往往在赛后丢弃，而通过APP组织的比赛，每一位参赛者都将永久在其帐号下记录这一次比赛的情况，在我们的社交系统（下文会谈到）中将发挥重要的作用。</p>
-<h2 id="u8D5B_u5236_u5E93"><a href="#u8D5B_u5236_u5E93" class="headerlink" title="赛制库"></a>赛制库</h2><p>羽毛球的魅力就在于无论男女老少都有参与，她的运动量可大可小。在很多情况下，业余比赛就是要玩出花样，让其更具有娱乐性。能凸出其娱乐性的地方就是赛事的赛制的多样化。</p>
-<p>在严肃的竞技羽毛球下，单败淘汰赛是最常见的赛制，它要求参赛选手去拼搏每一场比赛，但只要输一场就要离开这次赛事。这个对于娱乐型的业余爱好者来说是非常残酷和无趣的。于是五花八门的赛制被业余爱好者们开发了出来。举几个例子：</p>
-<ul>
-<li><p>随机配对积分制：<br>不用提前报名，来就打，只有双打，随机配对，胜者获得积分，愿意多参与者就多参加，最后按照积分的多少进行排名，给予奖励。</p>
-<p>点评：参赛者大多是中年选手，他们的体力实力参差不齐，自由选择参赛非常符合这一特点；随机配对体现了娱乐性；不用提前报名也增加了赛事的灵活性，可组织性。</p>
-</li>
-</ul>
-<p>像这样的娱乐赛制在全国各地是多种多样，我们的APP就会收集其中流行的、有趣的赛制，将它们的流程程序化，让用户更容易理解赛事的规则，更加容易参与到赛事中去。</p>
-<h2 id="u793E_u4EA4"><a href="#u793E_u4EA4" class="headerlink" title="社交"></a>社交</h2><p>我们有了“工具”来采集参与羽毛球运动的数据，像“计步”一样，利用好这些数据，才是我们的核心竞争力，将会给APP带来更多的活力，为用户提供有趣的体验。于是我们这里一定要做的是<code>羽毛球社交</code>。</p>
-<p>由于APP中存在的社交关系是非常简单的，针对性非常高，所以我们采用了类似于微博的关注机制。当双方互相关注后即成为好友，并可以发起一系列互动。</p>
-<h3 id="u6210_u5C31_u7CFB_u7EDF"><a href="#u6210_u5C31_u7CFB_u7EDF" class="headerlink" title="成就系统"></a>成就系统</h3><p>制作精美的图标（徽章）奖励给达到成就要求的用户，如“第一次赢得比赛”、“第一次参加赛事”、“第一次获得赛事的第一名”等等，让这些徽章展现在用户的个人资料页中。</p>
-<h3 id="u5386_u53F2_u6218_u7EE9"><a href="#u5386_u53F2_u6218_u7EE9" class="headerlink" title="历史战绩"></a>历史战绩</h3><p>你的每一次比赛记录，无论大小都将可以任意查询。你还可以进行比对查询，你可以查看你跟某球友的历史战绩，你对ta的胜率，你和TA都打到20分以后的局数，你2比0胜利的局数，谁对你的胜率最高，谁参加的比赛次数最多，等等等。</p>
-<h3 id="u6218_u961F_u7CFB_u7EDF"><a href="#u6218_u961F_u7CFB_u7EDF" class="headerlink" title="战队系统"></a>战队系统</h3><h3 id="u7EA6_u6218_u3001_u6311_u6218"><a href="#u7EA6_u6218_u3001_u6311_u6218" class="headerlink" title="约战、挑战"></a>约战、挑战</h3><h2 id="u5546_u57CE"><a href="#u5546_u57CE" class="headerlink" title="商城"></a>商城</h2>]]></content>
+    <title>Birdie-日志004</title>
+    <link href="http://grepug.github.io/2016/06/27/Birdie-%E6%97%A5%E5%BF%97004/"/>
+    <id>http://grepug.github.io/2016/06/27/Birdie-日志004/</id>
+    <published>2016-06-27T05:40:07.000Z</published>
+    <updated>2016-06-27T05:40:07.000Z</updated>
+    
+    <content type="html"></content>
+    
     <summary type="html">
-    <![CDATA[<h1 id="u9879_u76EE_u6982_u8FF0"><a href="#u9879_u76EE_u6982_u8FF0" class="headerlink" title="项目概述"></a>项目概述</h1><p>随着“互联网+”概念的提出和大力发展，各行各业都]]>
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[日志002]]></title>
+    <title>Birdie-日志003</title>
+    <link href="http://grepug.github.io/2016/03/12/Birdie-%E6%97%A5%E5%BF%97003/"/>
+    <id>http://grepug.github.io/2016/03/12/Birdie-日志003/</id>
+    <published>2016-03-12T03:47:18.000Z</published>
+    <updated>2016-03-12T04:02:06.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在成都工作了两周时间了，对我来说，发生了很多毁三观的事情。&lt;/p&gt;
+&lt;p&gt;我加入的是一家典型的移动互联网小公司，小到创始人只有一人，甚至创始人兼老板没有任何互联网创业的专业背景，纯粹的门外汉：不懂技术，不懂互联网时代的发展趋势，甚至不懂该怎样对待员工。这家公司的一些作风虽然不能代表整个移动互联创业环境，但也能体现出这个创业环境的门槛低到可怕、创业者的浮躁。本来认为创业是一件非常神圣的事情，这家公司的创业着实恶心了我一把。&lt;/p&gt;
+&lt;p&gt;吐槽结束。&lt;/p&gt;
+&lt;p&gt;我来成都最初的目的是来观察一下这里的创业环境，来之前的一天我随意发了一份简历，于是就来到了这家公司。虽然暂时还没辞职（我正在考虑），但我一直在观察我来之前的创业想法。没错，已经有创业项目在实现我之前的想法，但我并不会放弃，我喜欢羽毛球，我想要推广羽毛球，认识打羽毛球的朋友，开发优秀的服务于羽毛球爱好者的属于这个时代的不可或缺的产品——手机APP。&lt;/p&gt;
+&lt;p&gt;之前我考虑以社交、竞技作为Birdie项目的突破口，然而已经有项目开始实现这些。再加上没有资金、人手，无法高效推广。&lt;/p&gt;
+&lt;p&gt;于是我考虑从做羽毛球&lt;code&gt;垂直电商&lt;/code&gt;开始，建立一个羽毛球周边产品的垂直销售平台，保证正品，保证价格实惠，然后再以此建立社区，推出其他软功能。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在成都工作了两周时间了，对我来说，发生了很多毁三观的事情。&lt;/p&gt;
+&lt;p&gt;我加入的是一家典型的移动互联网小公司，小到创始人只有一人，甚至创始人兼老板没有任何互联网创业的专业背景，纯粹的门外汉：不懂技术，不懂互联网时代的发展趋势，甚至不懂该怎样对待员工。这家公司的一些作风虽然
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Birdie 项目计划书（草稿）</title>
+    <link href="http://grepug.github.io/2016/02/15/Birdie-%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92%E4%B9%A6/"/>
+    <id>http://grepug.github.io/2016/02/15/Birdie-项目计划书/</id>
+    <published>2016-02-15T01:12:57.000Z</published>
+    <updated>2016-02-15T03:09:16.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;项目概述&quot;&gt;&lt;a href=&quot;#项目概述&quot; class=&quot;headerlink&quot; title=&quot;项目概述&quot;&gt;&lt;/a&gt;项目概述&lt;/h1&gt;&lt;p&gt;随着“互联网+”概念的提出和大力发展，各行各业都开始引入互联网的元素。而在体育健康方面，苹果公司率先在其公司研发的移动操作系统iOS8中发布了“健康”应用，依靠iPhone的新“协处理器”对用户的健康数据进行跟踪记录，&lt;code&gt;计步&lt;/code&gt;功能在业界就这样火了起来。大小互联网公司争先开发了自己的计步应用，打着健康的旗号，融入自己的社交平台。用户不知不觉就喜欢上了每天晚上和社交圈里的好友比对自己一天走了多少步，乐此不彼。&lt;/p&gt;
+&lt;p&gt;在这样一个DT（马云提出的Data Technology）时代，一个小小的计步数据却被互联网厂家开发出来并成为一个被用户喜爱的产品。除此之外，在健康方面的“睡眠时间”，“体重”都可以通过手机应用测量并记录，为用户带来了更好的体验。可见&lt;code&gt;数据&lt;/code&gt;在这个时代的重要性。&lt;/p&gt;
+&lt;p&gt;目前，如果羽毛球爱好者想要记录平时和球友的比赛数据，是非常困难的；或者他们根本没有想到，或觉得没有必要把每场比赛的分数记录下来。就如上面&lt;code&gt;计步&lt;/code&gt;的例子，在带有计步功能的手机应用面世之前，也一定没有人想要把每天走的步数记录下来。&lt;/p&gt;
+&lt;p&gt;因此，羽毛球爱好者需要这样一个&lt;code&gt;工具&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Birdie项目就是要开发带有这个工具的APP（以下称为APP），用来记录羽毛球爱好者平时对抗、参加业余赛事等的比赛数据。它可以在任何时候任何地方很方便地发起一场简单的比赛，房主可以邀请双方选手及&lt;code&gt;裁判&lt;/code&gt;。比赛开始后，裁判会掌控比赛的&lt;code&gt;计分器&lt;/code&gt;，就像专业的羽毛球比赛的裁判使用的触屏计分器一样，我们将它缩小到手机上，让业余爱好者也能享受到到实时计分体验。&lt;/p&gt;
+&lt;p&gt;计分器上显示比赛双方的名称及头像，裁判可以在某方得分后为其加1分，当进行到中场间歇分时（如21分制的11分），计分器自动提醒“间歇”并做出1分钟倒计时。计分器同时会显示比赛时长，比赛的项目等等。在比赛结束后，比赛数据，包括双方得分，胜方，每球得分情况等数据上传至数据库，供用户随时调用进行对比。&lt;/p&gt;
+&lt;h2 id=&quot;赛事&quot;&gt;&lt;a href=&quot;#赛事&quot; class=&quot;headerlink&quot; title=&quot;赛事&quot;&gt;&lt;/a&gt;赛事&lt;/h2&gt;&lt;p&gt;有了计分器，不仅可以随时进行一场简单的比赛，更重要的是，让组织一次羽毛球赛事更加便捷。&lt;/p&gt;
+&lt;p&gt;在APP发布之前，如果在一次赛事中由裁判记录双方得分，都是用纸和笔完成的，这就造成了后续的分数统计都非常麻烦。如果引入我们的计分器，将大大减轻得分统计的工作量。&lt;/p&gt;
+&lt;p&gt;除了计分器，我们将用APP重新定义“组织一次羽毛球赛事”。赛事的发起、报名（包括交报名费）、订场地、出签位表、比赛日选手签到、主裁判叫号（通过APP信息推送）、选手弃权轮空、裁判计分、赛后统计、颁发奖励等等流程全部在APP中完成。相比于目前的由组织者编写赛事公告的word文档、组织者手工编排签位表并张贴到墙上、用纸笔来签到、纸笔计分、纸笔统计，大大地减轻了组织者的负担，让每一个参赛者都把精力放到比赛中。&lt;/p&gt;
+&lt;p&gt;除此之外，一次赛事后的结果往往在赛后丢弃，而通过APP组织的比赛，每一位参赛者都将永久在其帐号下记录这一次比赛的情况，在我们的社交系统（下文会谈到）中将发挥重要的作用。&lt;/p&gt;
+&lt;h2 id=&quot;赛制库&quot;&gt;&lt;a href=&quot;#赛制库&quot; class=&quot;headerlink&quot; title=&quot;赛制库&quot;&gt;&lt;/a&gt;赛制库&lt;/h2&gt;&lt;p&gt;羽毛球的魅力就在于无论男女老少都有参与，她的运动量可大可小。在很多情况下，业余比赛就是要玩出花样，让其更具有娱乐性。能凸出其娱乐性的地方就是赛事的赛制的多样化。&lt;/p&gt;
+&lt;p&gt;在严肃的竞技羽毛球下，单败淘汰赛是最常见的赛制，它要求参赛选手去拼搏每一场比赛，但只要输一场就要离开这次赛事。这个对于娱乐型的业余爱好者来说是非常残酷和无趣的。于是五花八门的赛制被业余爱好者们开发了出来。举几个例子：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;随机配对积分制：&lt;br&gt;不用提前报名，来就打，只有双打，随机配对，胜者获得积分，愿意多参与者就多参加，最后按照积分的多少进行排名，给予奖励。&lt;/p&gt;
+&lt;p&gt;点评：参赛者大多是中年选手，他们的体力实力参差不齐，自由选择参赛非常符合这一特点；随机配对体现了娱乐性；不用提前报名也增加了赛事的灵活性，可组织性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;像这样的娱乐赛制在全国各地是多种多样，我们的APP就会收集其中流行的、有趣的赛制，将它们的流程程序化，让用户更容易理解赛事的规则，更加容易参与到赛事中去。&lt;/p&gt;
+&lt;h2 id=&quot;社交&quot;&gt;&lt;a href=&quot;#社交&quot; class=&quot;headerlink&quot; title=&quot;社交&quot;&gt;&lt;/a&gt;社交&lt;/h2&gt;&lt;p&gt;我们有了“工具”来采集参与羽毛球运动的数据，像“计步”一样，利用好这些数据，才是我们的核心竞争力，将会给APP带来更多的活力，为用户提供有趣的体验。于是我们这里一定要做的是&lt;code&gt;羽毛球社交&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;由于APP中存在的社交关系是非常简单的，针对性非常高，所以我们采用了类似于微博的关注机制。当双方互相关注后即成为好友，并可以发起一系列互动。&lt;/p&gt;
+&lt;h3 id=&quot;成就系统&quot;&gt;&lt;a href=&quot;#成就系统&quot; class=&quot;headerlink&quot; title=&quot;成就系统&quot;&gt;&lt;/a&gt;成就系统&lt;/h3&gt;&lt;p&gt;制作精美的图标（徽章）奖励给达到成就要求的用户，如“第一次赢得比赛”、“第一次参加赛事”、“第一次获得赛事的第一名”等等，让这些徽章展现在用户的个人资料页中。&lt;/p&gt;
+&lt;h3 id=&quot;历史战绩&quot;&gt;&lt;a href=&quot;#历史战绩&quot; class=&quot;headerlink&quot; title=&quot;历史战绩&quot;&gt;&lt;/a&gt;历史战绩&lt;/h3&gt;&lt;p&gt;你的每一次比赛记录，无论大小都将可以任意查询。你还可以进行比对查询，你可以查看你跟某球友的历史战绩，你对TA的胜率，你和TA都打到20分以后的局数，你2比0胜利的局数，谁对你的胜率最高，谁参加的比赛次数最多，等等等。&lt;/p&gt;
+&lt;h3 id=&quot;战队系统&quot;&gt;&lt;a href=&quot;#战队系统&quot; class=&quot;headerlink&quot; title=&quot;战队系统&quot;&gt;&lt;/a&gt;战队系统&lt;/h3&gt;&lt;h3 id=&quot;约战、挑战&quot;&gt;&lt;a href=&quot;#约战、挑战&quot; class=&quot;headerlink&quot; title=&quot;约战、挑战&quot;&gt;&lt;/a&gt;约战、挑战&lt;/h3&gt;&lt;h2 id=&quot;商城&quot;&gt;&lt;a href=&quot;#商城&quot; class=&quot;headerlink&quot; title=&quot;商城&quot;&gt;&lt;/a&gt;商城&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;项目概述&quot;&gt;&lt;a href=&quot;#项目概述&quot; class=&quot;headerlink&quot; title=&quot;项目概述&quot;&gt;&lt;/a&gt;项目概述&lt;/h1&gt;&lt;p&gt;随着“互联网+”概念的提出和大力发展，各行各业都开始引入互联网的元素。而在体育健康方面，苹果公司率先在其公司研发的移动操作系
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日志002</title>
     <link href="http://grepug.github.io/2016/02/13/%E6%97%A5%E5%BF%97002/"/>
     <id>http://grepug.github.io/2016/02/13/日志002/</id>
     <published>2016-02-13T09:45:34.000Z</published>
     <updated>2016-02-13T09:51:08.000Z</updated>
-    <content type="html"><![CDATA[<p>还是接着上次说到的<code>赛制库</code>谈。经过几天和朋友的交流，我对赛制库有了更详细的设计和理解。</p>
-<h2 id="u8D5B_u5236_u5E93_u662FBirdie_u9879_u76EE_u7684_u7B2C_u4E00_u4E2A_u4E3B_u6253_u529F_u80FD"><a href="#u8D5B_u5236_u5E93_u662FBirdie_u9879_u76EE_u7684_u7B2C_u4E00_u4E2A_u4E3B_u6253_u529F_u80FD" class="headerlink" title="赛制库是Birdie项目的第一个主打功能"></a><code>赛制库</code>是Birdie项目的第一个主打功能</h2><p>赛制库分为两个部分：工具、数据</p>
-]]></content>
+    
+    <content type="html">&lt;p&gt;还是接着上次说到的&lt;code&gt;赛制库&lt;/code&gt;谈。经过几天和朋友的交流，我对赛制库有了更详细的设计和理解。&lt;/p&gt;
+&lt;h2 id=&quot;赛制库是Birdie项目的第一个主打功能&quot;&gt;&lt;a href=&quot;#赛制库是Birdie项目的第一个主打功能&quot; class=&quot;headerlink&quot; title=&quot;赛制库是Birdie项目的第一个主打功能&quot;&gt;&lt;/a&gt;&lt;code&gt;赛制库&lt;/code&gt;是Birdie项目的第一个主打功能&lt;/h2&gt;&lt;p&gt;赛制库分为两个部分：工具、数据&lt;/p&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<p>还是接着上次说到的<code>赛制库</code>谈。经过几天和朋友的交流，我对赛制库有了更详细的设计和理解。</p>
-<h2 id="u8D5B_u5236_u5E93_u662FBirdie_u9879_u76EE_u7684_u7B2C_u4E00_u4E2A_u4E]]>
+    
+      &lt;p&gt;还是接着上次说到的&lt;code&gt;赛制库&lt;/code&gt;谈。经过几天和朋友的交流，我对赛制库有了更详细的设计和理解。&lt;/p&gt;
+&lt;h2 id=&quot;赛制库是Birdie项目的第一个主打功能&quot;&gt;&lt;a href=&quot;#赛制库是Birdie项目的第一个主打功能&quot; class=&quot;headerli
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[Birdie 日志001]]></title>
+    <title>Birdie 日志001</title>
     <link href="http://grepug.github.io/2016/01/30/Birdie-%E6%97%A5%E5%BF%97001/"/>
     <id>http://grepug.github.io/2016/01/30/Birdie-日志001/</id>
     <published>2016-01-30T08:05:35.000Z</published>
     <updated>2016-01-30T09:19:46.000Z</updated>
-    <content type="html"><![CDATA[<p>Birdie日志从这里开始连载，主要介绍我们开发的动态：我们新的对设计这款APP的想法，以及我们接下来要实现的功能。</p>
-<p>今天上午进行了Birdie项目的首次头脑风暴（如果两人以上的讨论才算的话），主要讨论了Birdie项目中<code>比赛</code>的一些想法。我们将要实现的一个功能，给它起个名字叫<code>赛制库</code>。</p>
-<h2 id="u4E3A_u4EC0_u4E48_u8981_u8BBE_u8BA1_u8D5B_u5236_u5E93"><a href="#u4E3A_u4EC0_u4E48_u8981_u8BBE_u8BA1_u8D5B_u5236_u5E93" class="headerlink" title="为什么要设计赛制库"></a>为什么要设计赛制库</h2><p>羽毛球的参与人群非常广泛，这是我在之前的文章中谈到过的。如果要举办一次比赛的话，却需要考虑到具体的参赛群体，并不是所有人群都喜欢我们常见的单败淘汰制（赛前报名，排好对阵表），男单、女单、男双、女双、混双这样安排。</p>
-<p>在具体的业余比赛中，我们可能会分：</p>
-<ol>
-<li><p>参赛群体为年轻人，如中学、高校学生</p>
-</li>
-<li><p>参赛群体多为35岁以上的中年人</p>
-</li>
-</ol>
-<p>对于年轻人，他们的特点是：</p>
-<ul>
-<li>体力充沛，能进行高强度对抗</li>
-<li>更渴望争夺名次</li>
-<li>时间更灵活，能按时签到</li>
-</ul>
-<p>所以，我们认为这样的群体更适用于相对于严格的比赛制度，如常见的单败淘汰，小组循环后再单淘。</p>
-<p>而对于35岁以上的中年人，他们的特点是：</p>
-<ul>
-<li>男性选手多于女性选手</li>
-<li>对争夺名次的态度不同</li>
-<li>参赛选手水平层次不等（包括硬实力和体力）</li>
-<li>赛事时间需要灵活，并不是所有人都能按时签到</li>
-</ul>
-<p>这样的群体，很可能是国内羽毛球参与者中最多的一种，他们只是将羽毛球用来休闲、健身、交友，不像年轻人一样进行高强度对抗，他们不再适合使用以上提到的赛制。</p>
-<p>实际上我是受到了符合该人群的当地一个羽毛球俱乐部内部活动的比赛规则的启发。这个比赛规则具有<code>灵活</code>、<code>娱乐性高</code>、<code>对抗强度可高可低</code>、<code>不冷落女选手</code>的特点</p>
-<h2 id="u4ECB_u7ECD_u4E00_u4E0B_u8FD9_u4E2A_u8D5B_u5236"><a href="#u4ECB_u7ECD_u4E00_u4E0B_u8FD9_u4E2A_u8D5B_u5236" class="headerlink" title="介绍一下这个赛制"></a>介绍一下这个赛制</h2><ul>
-<li><p>灵活的报名与签到，不排阵，积分制</p>
-<p>这个赛制不需要提前报名，而是现场报名与签到。报名完成后你将可以选择<code>就绪</code>，系统就会自动为你安排双打搭档和对手，因此不用像常见的比赛一样排阵并一轮一轮地打下去，而是每打完一场系统自动为你配对下一场。采用积分制，打得越多并胜得越多你的积分就越高。最后以积分排出前N名，并给予奖励。这里就体现了参与人群的特点：并不是每个人都想要或有能力拿名次，更多人是抱着重在参与的态度。</p>
-</li>
-<li><p>不分男女</p>
-<p>男选手多于女选手在业余比赛中是非常普遍的，但将男女分开又使得比赛的趣味大减，于是这个赛制很聪明地规定不分男女，但给女选手的参与额外的奖励：如果你跟一个女选手搭档，将获得额外积分。</p>
-</li>
-<li><p>双打没有固定搭档，比赛实际上是个人赛</p>
-<p>每打完一场，下一场你的搭档和对手都可能变，这里也增加了趣味性，避免了高手强强联手的情况。</p>
-</li>
-</ul>
-<h2 id="u5EFA_u7ACB_u6211_u4EEC_u7684_u8D5B_u5236_u5E93"><a href="#u5EFA_u7ACB_u6211_u4EEC_u7684_u8D5B_u5236_u5E93" class="headerlink" title="建立我们的赛制库"></a>建立我们的赛制库</h2><p>分析完这个比赛规则，我感觉到这只是全国千千万万个俱乐部千奇百怪的比赛规则中的一种。这样的赛制非常适合参赛人群的特点，体现了制定者的智慧。这也是羽毛球这项运动的魅力。</p>
-<p>于是，我认为在我们的APP中，可以加入来自全国不同俱乐部中有特点的羽毛球比赛规则，将它们程序化，建立一个<code>赛制库</code>。让全国各地羽毛球爱好者举办比赛有更多的规则上的选择，加上APP的辅助，一定能让比赛更加有趣。</p>
-]]></content>
+    
+    <content type="html">&lt;p&gt;Birdie日志从这里开始连载，主要介绍我们开发的动态：我们新的对设计这款APP的想法，以及我们接下来要实现的功能。&lt;/p&gt;
+&lt;p&gt;今天上午进行了Birdie项目的首次头脑风暴（如果两人以上的讨论才算的话），主要讨论了Birdie项目中&lt;code&gt;比赛&lt;/code&gt;的一些想法。我们将要实现的一个功能，给它起个名字叫&lt;code&gt;赛制库&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;为什么要设计赛制库&quot;&gt;&lt;a href=&quot;#为什么要设计赛制库&quot; class=&quot;headerlink&quot; title=&quot;为什么要设计赛制库&quot;&gt;&lt;/a&gt;为什么要设计赛制库&lt;/h2&gt;&lt;p&gt;羽毛球的参与人群非常广泛，这是我在之前的文章中谈到过的。如果要举办一次比赛的话，却需要考虑到具体的参赛群体，并不是所有人群都喜欢我们常见的单败淘汰制（赛前报名，排好对阵表），男单、女单、男双、女双、混双这样安排。&lt;/p&gt;
+&lt;p&gt;在具体的业余比赛中，我们可能会分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;参赛群体为年轻人，如中学、高校学生&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参赛群体多为35岁以上的中年人&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对于年轻人，他们的特点是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;体力充沛，能进行高强度对抗&lt;/li&gt;
+&lt;li&gt;更渴望争夺名次&lt;/li&gt;
+&lt;li&gt;时间更灵活，能按时签到&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以，我们认为这样的群体更适用于相对于严格的比赛制度，如常见的单败淘汰，小组循环后再单淘。&lt;/p&gt;
+&lt;p&gt;而对于35岁以上的中年人，他们的特点是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;男性选手多于女性选手&lt;/li&gt;
+&lt;li&gt;对争夺名次的态度不同&lt;/li&gt;
+&lt;li&gt;参赛选手水平层次不等（包括硬实力和体力）&lt;/li&gt;
+&lt;li&gt;赛事时间需要灵活，并不是所有人都能按时签到&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样的群体，很可能是国内羽毛球参与者中最多的一种，他们只是将羽毛球用来休闲、健身、交友，不像年轻人一样进行高强度对抗，他们不再适合使用以上提到的赛制。&lt;/p&gt;
+&lt;p&gt;实际上我是受到了符合该人群的当地一个羽毛球俱乐部内部活动的比赛规则的启发。这个比赛规则具有&lt;code&gt;灵活&lt;/code&gt;、&lt;code&gt;娱乐性高&lt;/code&gt;、&lt;code&gt;对抗强度可高可低&lt;/code&gt;、&lt;code&gt;不冷落女选手&lt;/code&gt;的特点&lt;/p&gt;
+&lt;h2 id=&quot;介绍一下这个赛制&quot;&gt;&lt;a href=&quot;#介绍一下这个赛制&quot; class=&quot;headerlink&quot; title=&quot;介绍一下这个赛制&quot;&gt;&lt;/a&gt;介绍一下这个赛制&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;灵活的报名与签到，不排阵，积分制&lt;/p&gt;
+&lt;p&gt;这个赛制不需要提前报名，而是现场报名与签到。报名完成后你将可以选择&lt;code&gt;就绪&lt;/code&gt;，系统就会自动为你安排双打搭档和对手，因此不用像常见的比赛一样排阵并一轮一轮地打下去，而是每打完一场系统自动为你配对下一场。采用积分制，打得越多并胜得越多你的积分就越高。最后以积分排出前N名，并给予奖励。这里就体现了参与人群的特点：并不是每个人都想要或有能力拿名次，更多人是抱着重在参与的态度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不分男女&lt;/p&gt;
+&lt;p&gt;男选手多于女选手在业余比赛中是非常普遍的，但将男女分开又使得比赛的趣味大减，于是这个赛制很聪明地规定不分男女，但给女选手的参与额外的奖励：如果你跟一个女选手搭档，将获得额外积分。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;双打没有固定搭档，比赛实际上是个人赛&lt;/p&gt;
+&lt;p&gt;每打完一场，下一场你的搭档和对手都可能变，这里也增加了趣味性，避免了高手强强联手的情况。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;建立我们的赛制库&quot;&gt;&lt;a href=&quot;#建立我们的赛制库&quot; class=&quot;headerlink&quot; title=&quot;建立我们的赛制库&quot;&gt;&lt;/a&gt;建立我们的赛制库&lt;/h2&gt;&lt;p&gt;分析完这个比赛规则，我感觉到这只是全国千千万万个俱乐部千奇百怪的比赛规则中的一种。这样的赛制非常适合参赛人群的特点，体现了制定者的智慧。这也是羽毛球这项运动的魅力。&lt;/p&gt;
+&lt;p&gt;于是，我认为在我们的APP中，可以加入来自全国不同俱乐部中有特点的羽毛球比赛规则，将它们程序化，建立一个&lt;code&gt;赛制库&lt;/code&gt;。让全国各地羽毛球爱好者举办比赛有更多的规则上的选择，加上APP的辅助，一定能让比赛更加有趣。&lt;/p&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<p>Birdie日志从这里开始连载，主要介绍我们开发的动态：我们新的对设计这款APP的想法，以及我们接下来要实现的功能。</p>
-<p>今天上午进行了Birdie项目的首次头脑风暴（如果两人以上的讨论才算的话），主要讨论了Birdie项目中<code>比赛</code>的一些想]]>
+    
+      &lt;p&gt;Birdie日志从这里开始连载，主要介绍我们开发的动态：我们新的对设计这款APP的想法，以及我们接下来要实现的功能。&lt;/p&gt;
+&lt;p&gt;今天上午进行了Birdie项目的首次头脑风暴（如果两人以上的讨论才算的话），主要讨论了Birdie项目中&lt;code&gt;比赛&lt;/code&gt;的一些想
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[Birdie 内测 0.0.1 版本发布公告]]></title>
+    <title>Birdie 内测 0.0.1 版本发布公告</title>
     <link href="http://grepug.github.io/2016/01/21/Birdie-%E5%86%85%E6%B5%8B-0-0-1%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%85%AC%E5%91%8A/"/>
     <id>http://grepug.github.io/2016/01/21/Birdie-内测-0-0-1版本发布公告/</id>
     <published>2016-01-21T03:28:38.000Z</published>
     <updated>2016-01-26T02:36:00.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="u5DF2_u5B8C_u6210_u529F_u80FD"><a href="#u5DF2_u5B8C_u6210_u529F_u80FD" class="headerlink" title="已完成功能"></a>已完成功能</h2><ul>
-<li>好友<ul>
-<li>可以关注好友</li>
-<li>可以与好友单聊</li>
-<li>查看好友状态</li>
-<li>查看好友距离，（后续会标注球馆）</li>
-</ul>
-</li>
-<li>比赛<ul>
-<li>可以发起比赛</li>
-<li>由房主邀请参与者</li>
-<li>由房主调整对阵双方</li>
-<li>系统自动判断比赛类型</li>
-<li>房主可以选择得分制、局数</li>
-<li>比赛开始后由裁判端操作计分面板</li>
-<li>比赛结束后裁判端自动上传比赛数据，选手端接收比赛结果推送</li>
-<li>可以查看比赛历史</li>
-</ul>
-</li>
-<li>附近球友<ul>
-<li>可搜索附近的球友，查看对方的状态</li>
-</ul>
-</li>
-</ul>
-<h2 id="APP_u622A_u56FE"><a href="#APP_u622A_u56FE" class="headerlink" title="APP截图"></a>APP截图</h2><p><strong>稍后上传</strong></p>
-<h2 id="u9884_u8BA1_u53D1_u5E03_u65F6_u95F4"><a href="#u9884_u8BA1_u53D1_u5E03_u65F6_u95F4" class="headerlink" title="预计发布时间"></a>预计发布时间</h2><p>2016年1月28日</p>
-]]></content>
+    
+    <content type="html">&lt;h2 id=&quot;已完成功能&quot;&gt;&lt;a href=&quot;#已完成功能&quot; class=&quot;headerlink&quot; title=&quot;已完成功能&quot;&gt;&lt;/a&gt;已完成功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;好友&lt;ul&gt;
+&lt;li&gt;可以关注好友&lt;/li&gt;
+&lt;li&gt;可以与好友单聊&lt;/li&gt;
+&lt;li&gt;查看好友状态&lt;/li&gt;
+&lt;li&gt;查看好友距离，（后续会标注球馆）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;比赛&lt;ul&gt;
+&lt;li&gt;可以发起比赛&lt;/li&gt;
+&lt;li&gt;由房主邀请参与者&lt;/li&gt;
+&lt;li&gt;由房主调整对阵双方&lt;/li&gt;
+&lt;li&gt;系统自动判断比赛类型&lt;/li&gt;
+&lt;li&gt;房主可以选择得分制、局数&lt;/li&gt;
+&lt;li&gt;比赛开始后由裁判端操作计分面板&lt;/li&gt;
+&lt;li&gt;比赛结束后裁判端自动上传比赛数据，选手端接收比赛结果推送&lt;/li&gt;
+&lt;li&gt;可以查看比赛历史&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;附近球友&lt;ul&gt;
+&lt;li&gt;可搜索附近的球友，查看对方的状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;APP截图&quot;&gt;&lt;a href=&quot;#APP截图&quot; class=&quot;headerlink&quot; title=&quot;APP截图&quot;&gt;&lt;/a&gt;APP截图&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;稍后上传&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;预计发布时间&quot;&gt;&lt;a href=&quot;#预计发布时间&quot; class=&quot;headerlink&quot; title=&quot;预计发布时间&quot;&gt;&lt;/a&gt;预计发布时间&lt;/h2&gt;&lt;p&gt;2016年1月28日&lt;/p&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<h2 id="u5DF2_u5B8C_u6210_u529F_u80FD"><a href="#u5DF2_u5B8C_u6210_u529F_u80FD" class="headerlink" title="已完成功能"></a>已完成功能</h2><ul>
-<li>好友<u]]>
+    
+      &lt;h2 id=&quot;已完成功能&quot;&gt;&lt;a href=&quot;#已完成功能&quot; class=&quot;headerlink&quot; title=&quot;已完成功能&quot;&gt;&lt;/a&gt;已完成功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;好友&lt;ul&gt;
+&lt;li&gt;可以关注好友&lt;/li&gt;
+&lt;li&gt;可以与好友单聊&lt;/li&gt;
+&lt;li&gt;查看好友状态&lt;/
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[Birdie项目介绍]]></title>
+    <title>Birdie项目介绍</title>
     <link href="http://grepug.github.io/2016/01/21/Birdie%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
     <id>http://grepug.github.io/2016/01/21/Birdie项目介绍/</id>
     <published>2016-01-21T02:35:38.000Z</published>
     <updated>2016-01-21T05:09:49.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="u80CC_u666F_u4ECB_u7ECD"><a href="#u80CC_u666F_u4ECB_u7ECD" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>该项目起源于我对移动支付的痴迷，加上我又非常疯狂于打羽毛球，于是在去年9月我打算给我经常去的球馆开发一个手机支付的系统：手机刷二维码支付入场门票，买水等等。刚开始我介绍给老板，他表示很感兴趣，但当我开发快要完成，准备拿出来测试的时候，他却告诉我球馆的人太少，用这样一个系统并没有多大意义。我开始有点气馁，迷迷糊糊地过了几个月。我想过虽然球馆人少，但可以给周边的商铺也搭上这样的支付系统，搞商圈什么的。但随着“美团”、“大众点评”、“百度糯米”，再加上支付宝、微信支付自家的移动支付逐渐加入到我们这个小城市，我这个想法完全被我抛弃了。</p>
-<p>为何不搞个专注于羽毛球的手机应用？我是这么的热爱羽毛球，一周不打上六次都浑身不舒服的那种。于是，我首先看了下市面上的几个关于羽毛球的APP，大多以<code>自由社区</code>、<code>羽球新闻（八卦）</code>、<code>比赛及教学视频</code>、<code>装备商城</code>的形式存在。以百度羽毛球吧为首的“装备讨论区”，楚天等的商城，爱羽客的视频最为丰富，以及稍微侧重于技术方面的中羽论坛基本上组成了当下国内羽毛球互联网平台。虽然也出现了利用“高科技”来记录羽毛球技术的数据，但羽毛球运动的复杂性是远远不可能由简单的传感器采集数据的，所以这种“高科技”现在来说只是一种噱头罢了。</p>
-<p>我发现在这么多羽毛球平台中，除了商城，都能归为“资讯”类，对我来说，用这些APP就像刷微博一样，看看新闻评测。但是对于一项竞技性非常高的球类运动来说，它带来的乐趣完全不限于这些，我认为正是竞技才是羽毛球的精华所在。而<code>社交</code>功能是移动APP灵魂所在，于是，围绕着<code>竞技</code>与<code>社交</code>，我想要做出与众不同的APP。</p>
-<h2 id="u7075_u9B42_u793E_u4EA4"><a href="#u7075_u9B42_u793E_u4EA4" class="headerlink" title="灵魂社交"></a>灵魂<code>社交</code></h2><p>无论智能手机怎么发展，通信与交流是其万变不离其宗的最重要的功能，即使是现在智能手机及功能众多的移动APP的出现。大多数的移动APP都带有“社交”功能，而我开发的Birdie项目也是这样。区别于大多数APP的纯线上社交，结合羽毛球运动，我偏重于线下社交，也可以说是一种O2O（线上线下结合）吧。换句话说，通过这款APP你可以认识更多的实实在在的，能够与你隔网相对的单打对手、祝你一臂之力的双打队友。</p>
-<p>作为羽毛球参与者，你们可以组成一支队伍征战俱乐部（球馆）举办的比赛。对阵表、比赛得分、得分分析一一在该APP上呈现，记录，让比赛更有趣味，更有参与感。像玩网络游戏一样，能够查看自己和他人的<code>生涯记录</code>、<code>等级</code>、<code>积分</code>甚至<code>装备</code>等等</p>
-<h2 id="u6838_u5FC3_u7ADE_u6280"><a href="#u6838_u5FC3_u7ADE_u6280" class="headerlink" title="核心竞技"></a>核心<code>竞技</code></h2><p>没有去过羽毛球馆打过羽毛球的人总以为街边羽毛球就是这项运动的全部，然而作为一项运动量可以和篮球、网球等相媲美的高消耗的运动，羽毛球的竞技性在会玩的人眼里是“戒不掉的瘾”，它的竞技性让人痴迷到上瘾，它的技术丰厚，战术多变，据说是最费脑的一项球类运动。</p>
-<p>自然而然，竞技成为了该APP的核心。</p>
-<p>在APP里，我暂时将其取名为“比赛”。你与球友的比赛，队伍之间的比赛，俱乐部之间的比赛，学校之间的比赛。对于比赛，除了比赛双方，<code>裁判</code>是不容忽视的角色。裁判让比赛变得更加公正、公平，特别是在羽毛球速度特别快的情况下，没有裁判很难保证球出界与否的判断。不仅如此，在该APP中，将重新定义裁判，他还可以在球友之间练习比赛（非相对正式的比赛）中记录每个得分球的技术特点、最终落点位置等，让普通球友也能体验查看大赛中利用高科技才能采集的技术特点的数据，快速分析对手的技术特点，以及自己的薄弱环节。让每次打球都能有所收获，有所进步。</p>
-<p>一场“比赛”结束后，所有记录的数据（包括但不局限于双方得分、最高连续得分、得分曲线、得分球落点）将上传数据库，你将可以随时查看与球友的Head to head数据，胜率等等。</p>
-<h2 id="u793E_u4EA4_u4E0E_u7ADE_u6280_u7684_u7ED3_u5408"><a href="#u793E_u4EA4_u4E0E_u7ADE_u6280_u7684_u7ED3_u5408" class="headerlink" title="社交与竞技的结合"></a>社交与竞技的结合</h2><p>社交与竞技的结合是该APP的最大特点之一。两者结合的体现实际上在上文已有阐述。总的来说，你可以理解为，这是一款将羽毛球运动“网络游戏化”的APP。虚实结合。</p>
-<h2 id="u5546_u57CE_u3001_u8D44_u8BAF"><a href="#u5546_u57CE_u3001_u8D44_u8BAF" class="headerlink" title="商城、资讯"></a>商城、资讯</h2><p>对于一款完整的羽毛球APP来说，装备商城与羽球资讯是不能没有的。商城是一块很大的盈利点（我也想赚钱）、资讯是保证流量的关键。我也想将该APP做成羽毛球一站式体验，但作为先驱者们的强势领域，我会将重心放在我的特点上。</p>
-<h2 id="u76EE_u7684"><a href="#u76EE_u7684" class="headerlink" title="目的"></a>目的</h2><p>作为羽毛球狂热爱好者，主要目的不言而喻，就是想为羽毛球的推广与发展出小小的一份力。</p>
-<p>作为亲身体验，通过羽毛球遇到了不少对自己有帮助的人，我相信以后会更多。我希望越来越多的青少年参与到这项运动中来。对于我自己来说，是羽毛球把我从一个初中只会在放假玩电脑游戏的年轻人，变成一个更加关注运动与的羽毛球狂热者，让我有更多更强的身体资本消耗在写代码的时间里。</p>
-<h2 id="u76EE_u6807"><a href="#u76EE_u6807" class="headerlink" title="目标"></a>目标</h2><p>羽毛球在国内普及得还算不错，大小城市基本上都有羽毛球球馆（俱乐部），参与者数量庞大，业余比赛也争相斗艳。我想让该APP在未来成为每一个羽毛球爱好者的必装APP，大小比赛普遍采用该APP来记录数据，打造全国业余选手积分榜、省、市、俱乐部、战队积分榜。帮助爱好者入门，入门者提高。</p>
-<h2 id="u6700_u540E"><a href="#u6700_u540E" class="headerlink" title="最后"></a>最后</h2><p>请关注我的第一个内测版本，预计于1月28日在本站发布。</p>
-]]></content>
+    
+    <content type="html">&lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;p&gt;该项目起源于我对移动支付的痴迷，加上我又非常疯狂于打羽毛球，于是在去年9月我打算给我经常去的球馆开发一个手机支付的系统：手机刷二维码支付入场门票，买水等等。刚开始我介绍给老板，他表示很感兴趣，但当我开发快要完成，准备拿出来测试的时候，他却告诉我球馆的人太少，用这样一个系统并没有多大意义。我开始有点气馁，迷迷糊糊地过了几个月。我想过虽然球馆人少，但可以给周边的商铺也搭上这样的支付系统，搞商圈什么的。但随着“美团”、“大众点评”、“百度糯米”，再加上支付宝、微信支付自家的移动支付逐渐加入到我们这个小城市，我这个想法完全被我抛弃了。&lt;/p&gt;
+&lt;p&gt;为何不搞个专注于羽毛球的手机应用？我是这么的热爱羽毛球，一周不打上六次都浑身不舒服的那种。于是，我首先看了下市面上的几个关于羽毛球的APP，大多以&lt;code&gt;自由社区&lt;/code&gt;、&lt;code&gt;羽球新闻（八卦）&lt;/code&gt;、&lt;code&gt;比赛及教学视频&lt;/code&gt;、&lt;code&gt;装备商城&lt;/code&gt;的形式存在。以百度羽毛球吧为首的“装备讨论区”，楚天等的商城，爱羽客的视频最为丰富，以及稍微侧重于技术方面的中羽论坛基本上组成了当下国内羽毛球互联网平台。虽然也出现了利用“高科技”来记录羽毛球技术的数据，但羽毛球运动的复杂性是远远不可能由简单的传感器采集数据的，所以这种“高科技”现在来说只是一种噱头罢了。&lt;/p&gt;
+&lt;p&gt;我发现在这么多羽毛球平台中，除了商城，都能归为“资讯”类，对我来说，用这些APP就像刷微博一样，看看新闻评测。但是对于一项竞技性非常高的球类运动来说，它带来的乐趣完全不限于这些，我认为正是竞技才是羽毛球的精华所在。而&lt;code&gt;社交&lt;/code&gt;功能是移动APP灵魂所在，于是，围绕着&lt;code&gt;竞技&lt;/code&gt;与&lt;code&gt;社交&lt;/code&gt;，我想要做出与众不同的APP。&lt;/p&gt;
+&lt;h2 id=&quot;灵魂社交&quot;&gt;&lt;a href=&quot;#灵魂社交&quot; class=&quot;headerlink&quot; title=&quot;灵魂社交&quot;&gt;&lt;/a&gt;灵魂&lt;code&gt;社交&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;无论智能手机怎么发展，通信与交流是其万变不离其宗的最重要的功能，即使是现在智能手机及功能众多的移动APP的出现。大多数的移动APP都带有“社交”功能，而我开发的Birdie项目也是这样。区别于大多数APP的纯线上社交，结合羽毛球运动，我偏重于线下社交，也可以说是一种O2O（线上线下结合）吧。换句话说，通过这款APP你可以认识更多的实实在在的，能够与你隔网相对的单打对手、祝你一臂之力的双打队友。&lt;/p&gt;
+&lt;p&gt;作为羽毛球参与者，你们可以组成一支队伍征战俱乐部（球馆）举办的比赛。对阵表、比赛得分、得分分析一一在该APP上呈现，记录，让比赛更有趣味，更有参与感。像玩网络游戏一样，能够查看自己和他人的&lt;code&gt;生涯记录&lt;/code&gt;、&lt;code&gt;等级&lt;/code&gt;、&lt;code&gt;积分&lt;/code&gt;甚至&lt;code&gt;装备&lt;/code&gt;等等&lt;/p&gt;
+&lt;h2 id=&quot;核心竞技&quot;&gt;&lt;a href=&quot;#核心竞技&quot; class=&quot;headerlink&quot; title=&quot;核心竞技&quot;&gt;&lt;/a&gt;核心&lt;code&gt;竞技&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;没有去过羽毛球馆打过羽毛球的人总以为街边羽毛球就是这项运动的全部，然而作为一项运动量可以和篮球、网球等相媲美的高消耗的运动，羽毛球的竞技性在会玩的人眼里是“戒不掉的瘾”，它的竞技性让人痴迷到上瘾，它的技术丰厚，战术多变，据说是最费脑的一项球类运动。&lt;/p&gt;
+&lt;p&gt;自然而然，竞技成为了该APP的核心。&lt;/p&gt;
+&lt;p&gt;在APP里，我暂时将其取名为“比赛”。你与球友的比赛，队伍之间的比赛，俱乐部之间的比赛，学校之间的比赛。对于比赛，除了比赛双方，&lt;code&gt;裁判&lt;/code&gt;是不容忽视的角色。裁判让比赛变得更加公正、公平，特别是在羽毛球速度特别快的情况下，没有裁判很难保证球出界与否的判断。不仅如此，在该APP中，将重新定义裁判，他还可以在球友之间练习比赛（非相对正式的比赛）中记录每个得分球的技术特点、最终落点位置等，让普通球友也能体验查看大赛中利用高科技才能采集的技术特点的数据，快速分析对手的技术特点，以及自己的薄弱环节。让每次打球都能有所收获，有所进步。&lt;/p&gt;
+&lt;p&gt;一场“比赛”结束后，所有记录的数据（包括但不局限于双方得分、最高连续得分、得分曲线、得分球落点）将上传数据库，你将可以随时查看与球友的Head to head数据，胜率等等。&lt;/p&gt;
+&lt;h2 id=&quot;社交与竞技的结合&quot;&gt;&lt;a href=&quot;#社交与竞技的结合&quot; class=&quot;headerlink&quot; title=&quot;社交与竞技的结合&quot;&gt;&lt;/a&gt;社交与竞技的结合&lt;/h2&gt;&lt;p&gt;社交与竞技的结合是该APP的最大特点之一。两者结合的体现实际上在上文已有阐述。总的来说，你可以理解为，这是一款将羽毛球运动“网络游戏化”的APP。虚实结合。&lt;/p&gt;
+&lt;h2 id=&quot;商城、资讯&quot;&gt;&lt;a href=&quot;#商城、资讯&quot; class=&quot;headerlink&quot; title=&quot;商城、资讯&quot;&gt;&lt;/a&gt;商城、资讯&lt;/h2&gt;&lt;p&gt;对于一款完整的羽毛球APP来说，装备商城与羽球资讯是不能没有的。商城是一块很大的盈利点（我也想赚钱）、资讯是保证流量的关键。我也想将该APP做成羽毛球一站式体验，但作为先驱者们的强势领域，我会将重心放在我的特点上。&lt;/p&gt;
+&lt;h2 id=&quot;目的&quot;&gt;&lt;a href=&quot;#目的&quot; class=&quot;headerlink&quot; title=&quot;目的&quot;&gt;&lt;/a&gt;目的&lt;/h2&gt;&lt;p&gt;作为羽毛球狂热爱好者，主要目的不言而喻，就是想为羽毛球的推广与发展出小小的一份力。&lt;/p&gt;
+&lt;p&gt;作为亲身体验，通过羽毛球遇到了不少对自己有帮助的人，我相信以后会更多。我希望越来越多的青少年参与到这项运动中来。对于我自己来说，是羽毛球把我从一个初中只会在放假玩电脑游戏的年轻人，变成一个更加关注运动与的羽毛球狂热者，让我有更多更强的身体资本消耗在写代码的时间里。&lt;/p&gt;
+&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标&quot;&gt;&lt;/a&gt;目标&lt;/h2&gt;&lt;p&gt;羽毛球在国内普及得还算不错，大小城市基本上都有羽毛球球馆（俱乐部），参与者数量庞大，业余比赛也争相斗艳。我想让该APP在未来成为每一个羽毛球爱好者的必装APP，大小比赛普遍采用该APP来记录数据，打造全国业余选手积分榜、省、市、俱乐部、战队积分榜。帮助爱好者入门，入门者提高。&lt;/p&gt;
+&lt;h2 id=&quot;最后&quot;&gt;&lt;a href=&quot;#最后&quot; class=&quot;headerlink&quot; title=&quot;最后&quot;&gt;&lt;/a&gt;最后&lt;/h2&gt;&lt;p&gt;请关注我的第一个内测版本，预计于1月28日在本站发布。&lt;/p&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<h2 id="u80CC_u666F_u4ECB_u7ECD"><a href="#u80CC_u666F_u4ECB_u7ECD" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>该项目起源于我对移动支付的痴迷，加上我又非常疯狂]]>
+    
+      &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;p&gt;该项目起源于我对移动支付的痴迷，加上我又非常疯狂于打羽毛球，于是在去年9月我打算给我经常去的球馆开发一个手机支付的系统：手机
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title>Hello World</title>
     <link href="http://grepug.github.io/2016/01/21/hello-world/"/>
     <id>http://grepug.github.io/2016/01/21/hello-world/</id>
     <published>2016-01-21T01:34:02.000Z</published>
     <updated>2016-01-21T01:34:02.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.]]>
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
     </summary>
+    
     
   </entry>
   
